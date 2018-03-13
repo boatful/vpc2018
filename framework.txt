@@ -1,0 +1,206 @@
+<html lang = "en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+  
+	<title>
+		Vermont Paddlers Club: %1$s
+	</title>
+	<link rel="shortcut icon" type="image/x-icon" href="./favicon.ico" />
+	<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.2.3/jquery.min.js"> </script>-->
+	<script src="//code.jquery.com/jquery-3.2.1.min.js"> </script>
+	<script src="m/m.javascript/core.js"> </script>
+	<script id = "doc_me_do_jq"> </script>
+	<script>
+//<![CDATA[
+	$(document).ready(function(){
+		// CONTAINS sprintf(...) TOKEN... LEAVE THIS IN THE template DOCUMENT
+		breadcrumbs(%2$d);
+	});
+	$( document ).ajaxSuccess(function( event, xhr, settings ) {
+		// CONTAINS sprintf(...) TOKEN... LEAVE THIS IN THE template DOCUMENT
+		var now = Math.floor(Date.now()/1000-%3$d);
+	  if ( settings.url == "./m/m.ajax/custom_nav.php?children_of=2" ) {
+		$( "#ajax_loader_logging" ).append( "<li>AJAX success (at " + now + " sec): " + settings.url + "</li>");
+	  } else if(settings.url == "./m/m.ajax/custom_nav.php?children_of=3") {
+		$( "#ajax_loader_logging" ).append( "<li>AJAX success (at " + now + " sec): " + settings.url + "</li>");
+	  } else if(settings.url == "./m/m.ajax/custom_nav.php?children_of=4") {
+		$( "#ajax_loader_logging" ).append( "<li>AJAX success (at " + now + " sec): " + settings.url + "</li>");
+	  } else if(settings.url == "./m/m.ajax/custom_nav.php?children_of=5") {
+		$( "#ajax_loader_logging" ).append( "<li>AJAX success (at " + now + " sec): " + settings.url + "</li>");
+	  } else if(settings.url == "./m/m.ajax/events_calendar.php") {
+		$( "#ajax_loader_logging" ).append( "<li>AJAX success (at " + now + " sec): " + settings.url + "</li>");
+	  } else if(settings.url.indexOf("build_report.php") >= 0){
+		$( "#ajax_loader_logging" ).append( "<li>AJAX success (at " + now + " sec): " + settings.url + "</li>");
+	  } else {
+		$( "#ajax_loader_logging" ).append( "<li>Miscellaneous Ajax success: " + settings.url + "</li>");
+	  }
+	});
+//]]>
+	</script>
+	<style>
+	</style>
+	<link type="text/css" rel="stylesheet" />
+	<link type="text/css" rel="stylesheet" />
+	<link type="text/css" rel="stylesheet" />
+	<script data-cfasync="false" src="//dsms0mj1bbhn4.cloudfront.net/assets/pub/shareaholic.js" data-shr-siteid="65cd4070f9c3d726233eacd0eaf011d2" async="async"> </script>
+	<script src="m/m.javascript/fancybox-master/dist/jquery.fancybox.min.js"> </script>
+	<link rel="stylesheet" type="text/css" href="m/m.javascript/fancybox-master/dist/jquery.fancybox.css" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.css" />
+</head>
+<body>
+<div id = "admin_panel"> </div>
+<div id = "uber_header">
+<div class = "header">
+      <img id="hello_logo" alt="Vermont Paddlers Club" title="Vermont Paddlers Club" height = "150" width = "150" src="./m/m.images/VPC_logo_b_w_2313_1300.png" />
+</div>
+<div id = "access">
+  <div id="menu-header" class="menu-header"> 
+    <ul class="menu" id="universal_hubs_menu">
+      <li class="menu-item menu-item-type-custom menu-item-object-custom" id="hub_id_6"> 
+		<!--
+		See: https://useiconic.com/open
+		<img src="./m.svg/open-iconic-master/svg/project.svg" class="iconic-sprite" style="display:none;" />
+		<svg viewBox="0 0 8 8" class="icon">
+			<use xlink:href="#project" class="icon-project"></use>
+		</svg>-->
+        <a id="page_id_6" href="?id=6">What&apos;s New</a> </li>
+      <li class="menu-item menu-item-type-custom menu-item-object-custom" id="hub_id_40"> 
+        <a id="page_id_40" data-fancybox="login" data-type="iframe" data-src="m/m.auth/signin.php" href="javascript:;">Login</a> </li>
+      <li class="menu-item menu-item-type-custom menu-item-object-custom" id="hub_id_na"> 
+        <a id="page_id_na" href="m/m.auth/signout.php">Logout</a> </li>
+      <li class="menu-item menu-item-type-custom menu-item-object-custom wait_bg_000" id="hub_id_2"> 
+        <a id="page_id_2" href="?id=2">Go Paddling</a> </li>
+      <li class="menu-item menu-item-type-custom menu-item-object-custom wait_bg_000" id="hub_id_3"> 
+        <a id="page_id_3" href="?id=3">Talk Paddling</a> </li>
+      <li class="menu-item menu-item-type-custom menu-item-object-custom wait_bg_000" id="hub_id_4"> 
+        <a id="page_id_4" href="?id=4">Get Involved</a> </li>
+      <li class="menu-item menu-item-type-custom menu-item-object-custom wait_bg_000" id="hub_id_5"> 
+        <a id="page_id_5" href="?id=5">More Links</a> </li>
+      <li class="menu-item menu-item-type-custom menu-item-object-custom" id="hub_id_50"> 
+        <a id="page_id_50" href="?id=50">Site Map</a> </li>
+    </ul>
+  </div>
+</div>
+</div>
+<div class = "main">
+	<!--
+	<h1>
+		%1$s
+	</h1>
+	-->
+	<div id = "crumbs_and_page_title">
+		<div id = "page_crumbs">
+			<h2 id = "page_title">
+				%1$s
+			</h2>
+		</div>
+	</div>
+	<div id = "content">
+	</div>
+</div>
+<div class = "sidebar">
+	<div class = "widget"><div id="site_info">[widget_builder $widget = "search"]</div></div>
+	<div class = "widget"><div>[widget_builder $widget = "share"]</div></div>
+	<div class = "widget"><div>[widget_builder $widget = "quick links"]</div></div>
+	<div class = "widget"><div id = "upcoming_events_div">[widget_builder $widget = "events calendar"]</div><div id = "test_me"> </div></div>
+	<div class = "widget"><div>[widget_builder $widget = "quote of the day"]</div></div>
+</div>
+<div class="footer">
+		<div id = "provisos">
+			The 2018+ VPC site leverages CSS, Javascript, JQuery, AJAX, and FancyBox 3 to render it's mobile-friendly/responsive content. If you are seeing this in a pop-up window, then your browser appears to be 'keeping up' with the scripting demands. If the site mis-behaves, closing and reopening your browser may fix the problem, so try that <strong>FIRST</strong>. If you experience the same aberrant behavior in all browsers (or after closing and reopening your browser of choice) please notify the webmaster...
+		</div>
+		<div id = "page_permissions_logging"><pre>%9$s </pre></div>
+		<div id = "shortcodes_loader_logging"> </div>
+      <style id="login_style"> </style>
+      <style id="login_animate"> </style>
+      <style id="login_reset"> </style>
+      <div id="login_form"> </div>
+</div>
+<ol id = "ajax_loader_logging"> </ol>
+<div id = "sessions_loader_logging"><pre>%8$s </pre></div>
+<table id="authenticate">
+      <thead>
+        <tr>
+          <th>Property</th>
+          <th>Value</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr id = "tr_auth_logged_in">
+          <td>Logged in:</td>
+          <td id = "td_auth_logged_in">%5$s</td>
+		</tr>
+        <tr id = "tr_auth_user">
+          <td>Username:</td>
+          <td id="who">%6$s </td>
+		</tr>
+        <tr id = "tr_auth_session_id">
+          <td>Session ID:</td>
+          <td id="session_id">%7$s </td>
+		</tr>
+        <tr>
+          <td>Page ID:</td>
+          <td id="jz_id">%2$d</td>
+		</tr>
+        <tr>
+          <td>Page Privileges:</td>
+          <td id="jz_privileges">%4$d</td>
+		</tr>
+      </tbody>
+    </table>
+<div id="colophon">
+      <span id="views_label"> Page Views:</span>
+      <img width="110" height="22" title="page views" id="views_counter" style="margin-top: 7px" alt="Page Views Counter" src="m/m.images/counter.php?ID=%2$d" />
+      <span id="build_report">Build/load time: ? seconds.</span>
+      <div id="site_info">
+        <a id="site_info_link" href="?id=1"> 1996-2018 The Vermont Paddlers Club</a>
+      </div>
+      <a id="contact_us_link" style="float:right;margin-right:1em;" href="mailto:boatful@comcast.net?subject=VPC_page_id=%2$d">Report a Bug</a>
+      <a id="link_checker" style="float:right;margin-right:1em;" href="http://validator.w3.org/checklink?uri=http://m.vtpaddlers.net/%10$s?id=%2$d">Link Checker</a>
+	  <div id = "auditing_panel">
+	  	<ol>
+			<li>
+				<a id="proviso_link" data-fancybox = "1" href="#provisos">
+					Provisos
+				</a>
+			</li>
+			<li>
+				<a id="authentication_log" data-fancybox = "1" href="#page_permissions_logging">
+					Needed Page Privileges
+				</a>
+			</li>
+			<li>
+				<a id="user_log" data-fancybox = "1" href="#authenticate">
+					User Permissions
+				</a>
+			</li>
+			<li>
+				<a id="shortcodes_log" data-fancybox = "1" href="#shortcodes_loader_logging">
+					Shortcode Replacement(s)
+				</a>
+			</li>
+			<li>
+				<a id="session_log" data-fancybox = "1" href="#sessions_loader_logging">
+					Session logging
+				</a>
+			</li>
+			<li>
+				<a id="ajax_log" data-fancybox = "1" href="#ajax_loader_logging">
+					AJAX logging
+				</a>
+			</li>
+		</ol>
+	  </div>
+	  <a id="uber_log" style="float:right;margin-right:1em;" data-fancybox = "auditor" href="#auditing_panel">Audit</a>
+      <a style="float:left;margin-left:1em;" title="Valid XHTML 1.0" id="xhtml_validator" href="http://validator.w3.org/check?uri=referer">
+        <img width="88" height="31" style="border: 0; float:left;" alt="Valid XHTML 1.0" src="m/m.images/valid-xhtml10.png" />
+      </a>
+      <a style="float:left;margin-left:1em;" id="css_validator" href="http://jigsaw.w3.org/css-validator/validator?uri=http://m.vtpaddlers.net/%10$s?id=%2$d">
+        <img width="88" height="31" style="border: 0; float:left;" alt="Valid CSS" src="m/m.images/vcss.gif" />
+      </a>
+    </div>
+<div>
+<div id = "fancybox" style = "display: none;"> </div> </div>
+</body>
+</html>
